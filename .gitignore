@@ -1,1 +1,6 @@
 data/
+logs/*/*.pth
+logs/*/events.out.tfevents.*
+.hypothesis
+*.pyc
+__pycache__/
