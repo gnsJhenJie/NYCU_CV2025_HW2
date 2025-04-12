@@ -92,9 +92,6 @@ def get_transform(train):
         transforms.append(
             T.ColorJitter(
                 brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1))
-        # 加入隨機水平翻轉
-        transforms.append(lambda img: F.hflip(
-            img) if random.random() < 0.5 else img)
     # 最後轉為 tensor
     transforms.append(T.ToTensor())
     return T.Compose(transforms)
