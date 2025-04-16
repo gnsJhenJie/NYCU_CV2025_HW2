@@ -16,7 +16,6 @@
 import os
 import json
 import argparse
-import random
 from PIL import Image
 import numpy as np
 
